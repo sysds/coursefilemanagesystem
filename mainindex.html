@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> The Quality Management Unit</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body{
+      background-color: white;
+      background-size: cover;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fadeIn {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fadeIn.first {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fadeIn.second {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fadeIn.third {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.fadeIn.fourth {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/* Simple CSS3 Fade-in Animation */
+.underlineHover:after {
+  display: block;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: #56baed;
+  content: "";
+  transition: width 0.2s;
+}
+
+.contact {background-color:#dab0f5;}
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-column {
+  flex-basis: 25%;
+  margin-bottom: 20px;
+}
+
+.contact-column img {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+align:center;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-column {
+    flex-basis: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-purple w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Quality<br>Management Unit<br>UiTM Kedah</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../login/mainindex.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
+    <a href="../login/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Login</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-purple w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-purple w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Quality Management Unit</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div  id="home" style="margin-top:50px" id="showcase">
+    <h1 class="w3-jumbo"><b>Quality Management Unit</b></h1>
+<div style="max-width:500px">
+  <div class="fadeInDown">
+    <img class="mySlides w3-animate-fading" src="../images/obj-kualiti.png" style="width:980px;height:500px;">
+    <img class="mySlides w3-animate-fading" src="../images/upk.png" style="width:980px;height:500px;">
+    <img class="mySlides w3-animate-fading" src="../images/ikrar-kualiti.png" style="width:120%;height:500px;">
+  </div>
+  <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex - 1].style.display = "block";
+}
+</script>
+
+
+
+
+
+
+  <div class="w3-container contact" id="about" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-purple"><b>About</b></h1>
+    <hr style="width:50px;border:5px solid purple" class="w3-round">
+    <p>The Quality Management Unit in UiTM Kedah is responsible for ensuring consistency and excellence in the quality of education, services, and processes within the university. The unit collaborates with various departments and units to develop and implement quality management strategies and initiatives. Here are three key functions of the Quality Management Unit in UiTM Kedah:</p>
+    <p>		Consistency in Consultation: The Quality Unit works closely with departments and units across UiTM Kedah to establish consistent practices and standards. They provide consultation and guidance to ensure that quality is maintained and improved in various areas such as teaching and learning, research, student services, and administrative processes. By fostering collaboration and sharing best practices, the QMU promotes a culture of continuous improvement throughout the university.
+    </p>
+    <p>	Quality Competition Awards: The QMU organizes and manages quality competitions at the university level. These competitions aim to recognize and reward outstanding achievements in quality management. By acknowledging and celebrating successful practices, the QMU encourages departments and units to strive for excellence and contribute to the overall quality enhancement of UiTM Kedah. The awards serve as a motivation for continuous improvement and innovation.	
+    </p>
+    <p>	Management of Quality Records: The QMU plays a crucial role in managing quality records within UiTM Kedah. They establish systems and processes to ensure the proper documentation, storage, and retrieval of quality-related information, including policies, guidelines, procedures, and audit reports. Effective management of quality records enables transparency, accountability, and the ability to track progress in quality initiatives. The QMU may also facilitate the implementation of quality management systems and standards, such as ISO 9001, to ensure compliance and alignment with international best practices.	
+    </p>
+    <p>	Overall, the Quality Management Unit in UiTM Kedah is dedicated to promoting a culture of quality and continuous improvement. By fostering collaboration, recognizing excellence, and ensuring proper documentation, the QMU contributes to the enhancement of education, services, and processes at UiTM Kedah.	
+    </p>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-purple"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid purple" class="w3-round">
+<div class="contact-section">
+  <div class="contact-column">
+    <img src="../images/location1.webp">
+    <p>Location: </p>
+	<p>Unit Pengurusan Kualiti,</p>
+	<p>Universiti Teknologi Mara,</p>
+	<p>Cawangan Sungai Petani,</p> 
+	<p>08400 Merbok,</p>
+	<p>Kedah</p>
+  </div>
+  <div class="contact-column">
+    <img src="../images/email1.png">
+    <p>Email: </p>
+	<p>kukkedah@uitm.edu.my</p>
+  </div>
+  <div class="contact-column">
+    <img src="../images/call2.png">
+    <p>Tel:</p> 
+	<p>+604-456 2091</p>
+  </div>
+  <div class="contact-column">
+    <img src="../images/fax2.png">
+    <p>Fax: </p>
+	<p>+604-456 2223</p>
+  </div>
+</div>
+
+  </div>
+
+<!-- End page content -->
+</div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
